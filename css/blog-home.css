@@ -1,0 +1,32 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template/blog-home)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.cards {
+  max-width: 140px;
+  height: 220px;
+  z-index: 1;
+}
+.check {
+  width: 140px;
+  height: 220px;
+  position: absolute;
+  left: 15px;
+  top: 0px;
+  z-index: 3;
+  display: none;
+}
+.cards-sm{
+  max-width: 100px;
+}
+.side-result {
+  position: fixed;
+}
+.cardHolder {
+  margin-top: 20px
+}

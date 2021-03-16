@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog Home - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-home.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+        <h1 class="my-4">Loteria mexicana.</h1>
+
+      <div id="Seleccion">
+        <select id="seleccionarTarjeta" onchange="getTarjeta()">
+          <option value="" selected>Seleccionauna opción</option>
+          <option value="1">Tabla 1</option>
+          <option value="2">Tabla 2</option>
+          <option value="3">Tabla 3</option>
+        </select>
+        <input type="button" id="selectedTarjeta" value="Seleccionar" onclick="lockTarjeta()">
+      </div>
+
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <h1 class="my-4" id="advertencia" style="display: block;">Seleccione una tabla primero.</h1>
+          <!--img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"-->
+          <div class="card-body" style="display: none;" id="tabla">
+            <div class="row cardHolder">
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card0" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card1" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card2" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card3" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+            </div>
+            <div class="row cardHolder">
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card4" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card5" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card6" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card7" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+            </div>
+            <div class="row cardHolder">
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card8" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card9" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card10" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card11" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+            </div>
+            <div class="row cardHolder">
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card12" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card13" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card14" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+              <div class="col-sm">
+                <input type="image" src="img/cards/1.jpg" class="cards" alt="El gallo" id="card15" onclick="check(this)" cardId = "0">
+                <input type="image" src="img/check.png" class="check" alt="check" onclick="check(this)">
+              </div>
+            </div>
+            <!--h2 class="card-title">Post Title</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="#" class="btn btn-primary">Read More &rarr;</a-->
+          </div>
+          <!--div class="card-footer text-muted">
+            Posted on January 1, 2020 by
+            <a href="#">Start Bootstrap</a>
+          </div-->
+        </div>
+
+        <!-- Pagination
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+          </li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
+          </li>
+        </ul-->
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget -->
+        <div class="card my-4 side-result">
+          <h5 class="card-header">Search</h5>
+          <div class="card-body">
+            <img src="" class="cards-sm" id="actualCard">
+          </div>
+          <button type="button" onclick="stopInterval(this)" style="display: none;">Basta</button>
+          <button type="button" onclick="startInterval(this)">Listo</button>
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
